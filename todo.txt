@@ -1,0 +1,29 @@
+standard simplex algorithm (problem in standard form, no artificial variables)
+
+get number of control variables
+get the objective function
+get the constraints (assume positivity of control variables)
+output to document
+
+form initial tableau
+output to document
+
+iterate:
+    check cycling
+        will have to take care of that later
+    check positivity of z-row
+        if yes, break
+    find entering variable
+    compute theta values
+        take care with infinities
+    find exiting variable
+        have a vector with the non-basic variables
+    form tableau
+    gaussian elimination
+    output tableau to document
+
+
+Need to test:
+How does infinity work? That's alright
+Sending to a document
+Printing a groff document
